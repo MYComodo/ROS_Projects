@@ -1,2 +1,2 @@
-Ultrasonic_PubSub
+Ultrasonic_PubSub:ps_motor
 -DCATKIN_DEVEL_PREFIX=/home/komodo/Desktop/Projects/ROS/ROS_Projects/devel -DCMAKE_INSTALL_PREFIX=/home/komodo/Desktop/Projects/ROS/ROS_Projects/install -G Unix Makefiles

@@ -455,6 +455,24 @@ clean: Ultrasonic_PubSub/CMakeFiles/_catkin_empty_exported_target.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory ps_motor
+
+# Convenience name for "all" pass in the directory.
+ps_motor/all:
+
+.PHONY : ps_motor/all
+
+# Convenience name for "clean" pass in the directory.
+ps_motor/clean:
+
+.PHONY : ps_motor/clean
+
+# Convenience name for "preinstall" pass in the directory.
+ps_motor/preinstall:
+
+.PHONY : ps_motor/preinstall
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

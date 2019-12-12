@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/komodo/Desktop/Projects/ROS/ROS_Projects/build/gtest/cmake_install.cmake")
   include("/home/komodo/Desktop/Projects/ROS/ROS_Projects/build/Ultrasonic_PubSub/cmake_install.cmake")
+  include("/home/komodo/Desktop/Projects/ROS/ROS_Projects/build/ps_motor/cmake_install.cmake")
 
 endif()
 

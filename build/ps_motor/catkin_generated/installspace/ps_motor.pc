@@ -1,0 +1,8 @@
+prefix=/home/komodo/Desktop/Projects/ROS/ROS_Projects/install
+
+Name: ps_motor
+Description: Description of ps_motor
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/komodo/Desktop/Projects/ROS/ROS_Projects/install/lib 
+Requires: 

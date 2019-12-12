@@ -43,3 +43,10 @@
 /home/komodo/Desktop/Projects/ROS/ROS_Projects/build/Ultrasonic_PubSub/CMakeFiles/rebuild_cache.dir
 /home/komodo/Desktop/Projects/ROS/ROS_Projects/build/Ultrasonic_PubSub/CMakeFiles/list_install_components.dir
 /home/komodo/Desktop/Projects/ROS/ROS_Projects/build/Ultrasonic_PubSub/CMakeFiles/install.dir
+/home/komodo/Desktop/Projects/ROS/ROS_Projects/build/ps_motor/CMakeFiles/install/strip.dir
+/home/komodo/Desktop/Projects/ROS/ROS_Projects/build/ps_motor/CMakeFiles/edit_cache.dir
+/home/komodo/Desktop/Projects/ROS/ROS_Projects/build/ps_motor/CMakeFiles/rebuild_cache.dir
+/home/komodo/Desktop/Projects/ROS/ROS_Projects/build/ps_motor/CMakeFiles/list_install_components.dir
+/home/komodo/Desktop/Projects/ROS/ROS_Projects/build/ps_motor/CMakeFiles/install.dir
+/home/komodo/Desktop/Projects/ROS/ROS_Projects/build/ps_motor/CMakeFiles/test.dir
+/home/komodo/Desktop/Projects/ROS/ROS_Projects/build/ps_motor/CMakeFiles/install/local.dir
