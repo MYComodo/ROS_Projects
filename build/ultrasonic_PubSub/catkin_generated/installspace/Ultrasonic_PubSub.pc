@@ -1,0 +1,8 @@
+prefix=/home/komodo/Desktop/Projects/ROS/ROS_Projects/install
+
+Name: Ultrasonic_PubSub
+Description: Description of Ultrasonic_PubSub
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/komodo/Desktop/Projects/ROS/ROS_Projects/install/lib 
+Requires: 
