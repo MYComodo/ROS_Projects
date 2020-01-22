@@ -6,4 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("Ultrasonic_PubSub")
-subdirs("ps_motor")
+subdirs("abd")
+subdirs("pkg_motor_drive")

@@ -1,0 +1,8 @@
+prefix=/home/komodo/Desktop/Projects/ROS/ROS_Projects/devel
+
+Name: pkg_motor_drive
+Description: Description of pkg_motor_drive
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/komodo/Desktop/Projects/ROS/ROS_Projects/devel/lib 
+Requires: 

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(ps_motor)
+project(pkg_motor_drive)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -7,10 +7,14 @@ project(ps_motor)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED)
+find_package(catkin REQUIRED COMPONENTS
+  rospy
+  std_msgs
+)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
+# find_package(python-rpi.gpio REQUIRED)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -66,7 +70,7 @@ find_package(catkin REQUIRED)
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
+#   std_msgs
 # )
 
 ################################################
@@ -100,9 +104,9 @@ find_package(catkin REQUIRED)
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES ps_motor
-#  CATKIN_DEPENDS other_catkin_pkg
-#  DEPENDS system_lib
+#  LIBRARIES pkg_motor_drive
+#  CATKIN_DEPENDS rospy std_msgs
+#  DEPENDS python-rpi.gpio
 )
 
 ###########
@@ -113,12 +117,12 @@ catkin_package(
 ## Your package locations should be listed before other locations
 include_directories(
 # include
-# ${catkin_INCLUDE_DIRS}
+  ${catkin_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/ps_motor.cpp
+#   src/${PROJECT_NAME}/pkg_motor_drive.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -129,7 +133,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/ps_motor_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/pkg_motor_drive_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -144,6 +148,7 @@ include_directories(
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
+#   ${python-rpi.gpio_LIBRARIES}
 # )
 
 #############
@@ -193,7 +198,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_ps_motor.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_pkg_motor_drive.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
